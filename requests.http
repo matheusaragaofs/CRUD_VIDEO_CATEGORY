@@ -1,0 +1,30 @@
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "name": "Animação",
+    "description": "Filmes de animação."
+}
+### 
+DELETE http://localhost:3000/category/5teste2
+### 
+GET http://localhost:3000/categories
+###
+PUT http://localhost:3000/category/d724e78c-8e4e-4163-9128-2c56cdba866c
+Content-Type: application/json
+
+{
+     "name": "Ação"
+}
+
+### 
+
+POST http://localhost:3000/videos
+Content-Type: application/json
+
+{
+    "name": "Homem Aranha 2",
+    "description": "Homem aranha contra o Doutor Octopus.",
+    "duration": 3000,
+    "category_id":"ddfc1db5-1ddf-4f55-9a2a-0940aa35cda9"
+}
